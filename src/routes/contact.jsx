@@ -48,7 +48,8 @@ export default function Contact() {
               if (!confirm("Please confirm you want to delete this record.")) {
                 event.preventDefault();
               }
-            }}>
+            }}
+          >
             <button type="submit">Delete</button>
           </Form>
         </div>
@@ -65,7 +66,8 @@ function Favorite({ contact }) {
       <button
         name="favorite"
         value={favorite ? "false" : "true"}
-        aria-label={favorite ? "Remove from favorites" : "Add to favorites"}>
+        aria-label={favorite ? "Remove from favorites" : "Add to favorites"}
+      >
         {favorite ? "★" : "☆"}
       </button>
     </Form>
