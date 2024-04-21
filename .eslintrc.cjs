@@ -17,7 +17,7 @@ module.exports = {
       "@typescript-eslint/parser": [".js", ".jsx", "ts", "tsx"],
     },
   },
-  plugins: ["react-refresh","import"],
+  plugins: ["react-refresh", "import"],
   rules: {
     "react/jsx-no-target-blank": "off",
     "react-refresh/only-export-components": [
