@@ -6,6 +6,8 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
+    // "plugin:import/recommended"
+    // "plugin:prettier/recommended"
   ],
   ignorePatterns: ["dist", ".eslintrc.cjs"],
   parserOptions: { ecmaVersion: "latest", sourceType: "module" },
@@ -15,7 +17,7 @@ module.exports = {
       "@typescript-eslint/parser": [".js", ".jsx", "ts", "tsx"],
     },
   },
-  plugins: ["react-refresh"],
+  plugins: ["react-refresh","import"],
   rules: {
     "react/jsx-no-target-blank": "off",
     "react-refresh/only-export-components": [
@@ -54,16 +56,16 @@ module.exports = {
         },
       },
     ],
-    "sort-imports": [
-      "error",
-      {
-        ignoreCase: false,
-        ignoreDeclarationSort: false,
-        ignoreMemberSort: false,
-        memberSyntaxSortOrder: ["none", "all", "multiple", "single"],
-        allowSeparatedGroups: false,
-      },
-    ],
+    // "sort-imports": [
+    //   "error",
+    //   {
+    //     ignoreCase: false,
+    //     ignoreDeclarationSort: false,
+    //     ignoreMemberSort: false,
+    //     memberSyntaxSortOrder: ["none", "all", "multiple", "single"],
+    //     allowSeparatedGroups: false,
+    //   },
+    // ],
   },
-  extends: ["plugin:prettier/recommended"],
+  // extends: ["plugin:prettier/recommended"],
 };
